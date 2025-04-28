@@ -17,7 +17,7 @@ function BalancedBracket(str) {
                 return false;
             }
         } else if (char !== ' ') {
-            // If the character is not a bracket, return false
+            // If the character is not a bracket and not space, return false
             return false;
         }
     }
