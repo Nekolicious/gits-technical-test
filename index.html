@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITS.ID Technical Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column justify-content-center align-items-center py-5 gap-4">
+    <script src="/js/Q1-A000124.js"></script>
+    <script src="/js/Q2-DenseRank.js"></script>
+    <script src="/js/Q3-BalancedBracket.js"></script>
+
+    <div class="container row justify-content-center align-items-center ">
+        <h2>Lazy Caterer's sequence (A000124)</h2>
+        <div class="col-6 col-md-4 d-grid gap-2">
+            <label for="a000124">Number of sequences</label>
+            <input name="a000124" type="text" class="form-control" id="a000124" placeholder="Input a number">
+            <button class="btn btn-primary" onclick="A000124()" type="button">Submit</button>
+
+        </div>
+        <div class="col-6 d-grid gap-2">
+            <label for="a000124_result">Result</label>
+            <textarea class="form-control" id="a000124_result" placeholder="Result will shown up here"
+                readonly></textarea>
+            <button class="btn btn-danger" onclick="Reset_result('a000124_result')">Clear</button>
+        </div>
+    </div>
+
+    <!-- Separator -->
+    <div class="border w-100 my-4"></div>
+    <div class="container row justify-content-center align-items-center">
+        <h2>Dense Rank</h2>
+        <div class="col-6 col-md-4 d-grid gap-2">
+            <div class="d-grid gap-2">
+                <label for="denserank">Other Scores</label>
+                <textarea class="form-control" oninput="validateNumbers(this)" name="denserank" id="scores"
+                    placeholder="100 100 50 40 40 20 10 "></textarea>
+            </div>
+            <div class="d-grid gap-2">
+                <label for="denserank">GITS Scores</label>
+                <textarea class="form-control" oninput="validateNumbers(this)" name="denserank" id="gitScores"
+                    placeholder="5 25 50 120"></textarea>
+            </div>
+            <p class="text-secondary"><small>Only put number and separate using space, other character will be
+                    ignored.</small></p>
+            <button class="btn btn-primary" onclick="CalculateRank()" type="button">Submit</button>
+        </div>
+        <div class="col-6 d-grid gap-2">
+            <label for="denserank_result">Result</label>
+            <textarea class="form-control" id="denserank_result" placeholder="Result will shown up here"
+                readonly></textarea>
+            <button class="btn btn-danger" onclick="Reset_result('denserank_result')">Clear</button>
+        </div>
+    </div>
+    <!-- Separator -->
+    <div class="border w-100 my-4"></div>
+    <div class="container row justify-content-center align-items-center">
+        <h2>Balanced Bracket</h2>
+        <div class="col-6 col-md-4 d-grid gap-2">
+            <label for="bracket">String of Brackets</label>
+            <input name="bracket" type="text" class="form-control" id="bracket" placeholder="Input string of brackets">
+            <button class="btn btn-primary" onclick="CheckBracket()" type="button">Submit</button>
+
+        </div>
+        <div class="col-6 d-grid gap-2">
+            <label for="bracket_result">Result</label>
+            <textarea class="form-control" id="bracket_result" placeholder="Result will shown up here"
+                readonly></textarea>
+            <button class="btn btn-danger" onclick="Reset_q2result()">Clear</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
