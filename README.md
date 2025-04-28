@@ -26,3 +26,12 @@ Output Test:
 ![{928A6671-2EAB-4148-B94A-F6F630B5C9AA}](https://github.com/user-attachments/assets/aacc3907-1bee-49f0-b652-1e1fe3d6273b)
 
 ### Analysis
+1. Iterate each character in `str`
+    - This function will iterate each character inside `str` input.
+    - If `str` length is `n`, then loop will run `n` times.
+    - Every iteration will determine if the character is an **open bracket** (which needs to be added to the stack) or **closed bracket** (which needs to be matched with the stack).
+2. Stack operation
+    - Every operation on the stack (both push and pop) has a time complexity of O(1), as the stack is a data structure that supports such operations in constant time.
+3. Search in `brackets` objects
+    - For each character that is an open bracket, perform a search in the `brackets` object to find a close parenthesis pair. This search is O(1) because the `brackets` object is a hash table data structure.
+    - For close bracket characters, check if they are in the values of the `brackets` object. This operation is also O(1) because use of `Object.values(brackets)` which returns an array containing the values of the closing brackets. However, searching inside the array using `Object.values(brackets)` is O(1) because there are only 3 pairs of brackets that can be matched (open brackets and close brackets).
