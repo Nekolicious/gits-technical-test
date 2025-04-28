@@ -1,6 +1,13 @@
 # About
 Answer for Back-end GITS.ID Technical Test.
 
+# Table of Contents
+1. [Q1 - A000124 Triangle numbers](#q1---a000124-triangle-numbers)
+2. [Q2 - Dense Rank](#q2---dense-rank)
+3. [Q3 - Balanced Bracket](#q3---balanced-bracket)
+    1. [Analysis](#analysis)
+   
+
 ## Q1 - A000124 Triangle numbers
 Output Test:
 ![{F9C9C97B-0E87-4639-9BD8-3D891C7130B1}](https://github.com/user-attachments/assets/b7dfd42e-7e06-4dc4-816f-cbdffbc52baa)
@@ -17,3 +24,5 @@ Output Test:
 ![{D7FE6CBB-4535-46B2-9628-6AA4ADC7DF8B}](https://github.com/user-attachments/assets/c6f0e665-e2a3-4b0f-bbae-68ed09d6e1d5)
 ![{AA0CD4E5-AAEC-4EBC-A72F-FC0BA5EAFD20}](https://github.com/user-attachments/assets/295c848c-37b6-4e0b-b687-03f99e2aa36f)
 ![{928A6671-2EAB-4148-B94A-F6F630B5C9AA}](https://github.com/user-attachments/assets/aacc3907-1bee-49f0-b652-1e1fe3d6273b)
+
+### Analysis
