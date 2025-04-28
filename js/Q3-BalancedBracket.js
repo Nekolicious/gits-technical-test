@@ -16,7 +16,7 @@ function BalancedBracket(str) {
             if (stack.pop() !== char) {
                 return false;
             }
-        } else {
+        } else if (char !== ' ') {
             // If the character is not a bracket, return false
             return false;
         }
